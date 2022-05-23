@@ -1,0 +1,18 @@
+.marginaTop{
+    margin-top: 10%;
+    
+}
+tbody{
+    background-color: white;   
+    
+}
+.trash{
+    font-size: 30px;
+    vertical-align: middle; 
+    color: red;
+    
+}
+.redic{
+    vertical-align: middle;
+    justify-self: center;
+}
