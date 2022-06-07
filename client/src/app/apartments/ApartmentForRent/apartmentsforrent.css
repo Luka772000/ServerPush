@@ -32,3 +32,13 @@ mat-label {
 .gumbic{
     margin-right: 10px;
 }
+@media screen and (max-width: 768px) {
+    .membercard{
+        width: 100%;
+        right:20px
+    }
+    .filtar{
+        width:100%;
+        
+    }
+  }

@@ -29,8 +29,7 @@ const routes: Routes = [
         {path: 'contact', component: ContactFormComponent,canActivate: [AuthGuard]},
         {path: 'news', component: NewComponent}
     ]
-  },  
-  {path: '**',component: HomeComponent, pathMatch: 'full' },
+  } 
 ];
 
 @NgModule({

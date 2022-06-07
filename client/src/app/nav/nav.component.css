@@ -22,3 +22,29 @@
 .matFormField{
     margin-left: 10px;
 }
+@media screen and (max-width: 768px) {
+    .matFormField{
+        margin-left: 2px;
+        width:20vw;
+        height:10vh;
+        display: inline-block;
+        font-size: smaller;
+    }
+    .btn{
+        width:25vw;
+        height: 5vh;
+        font-size: smaller;
+    }
+    .navbar{
+        height:55px
+    }
+    .homeslika{
+        display: none;
+    }
+    .nav-item{
+        font-size: smaller;
+    }
+}
+@media screen and (max-height: 400px){
+    .btn{height:9vh}
+}

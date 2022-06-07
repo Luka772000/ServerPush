@@ -41,6 +41,11 @@ import { Filter } from './filter/filter.component';
 import { MatSelectModule} from '@angular/material/select';
 import { NewComponent } from './news/new/new.component';
 import { DeleteUserDialogComponent } from './Popups/delete-user-dialog/delete-user-dialog.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +74,7 @@ import { DeleteUserDialogComponent } from './Popups/delete-user-dialog/delete-us
     Filter,
     NewComponent,
     DeleteUserDialogComponent,
+    SidenavComponent,
   ],
   imports: [
     MatInputModule,
@@ -86,7 +92,11 @@ import { DeleteUserDialogComponent } from './Popups/delete-user-dialog/delete-us
     MatIconModule,
     ReactiveFormsModule,
     Ng2SearchPipeModule,
-    MatSelectModule
+    MatSelectModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent],

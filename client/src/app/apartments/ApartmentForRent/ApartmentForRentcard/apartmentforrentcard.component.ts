@@ -26,7 +26,7 @@ bsModalRef: BsModalRef;
   }
   openModal(apartment: Apartment){
     const config = {
-      class: 'modal-dialog-centered',
+      class: 'modal-dialog-center',
       initialState: {
         apartment
       }

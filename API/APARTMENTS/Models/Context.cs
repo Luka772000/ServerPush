@@ -27,7 +27,8 @@ namespace APARTMENTS.Models
             modelBuilder.Entity<User>()
                 .HasMany(ap => ap.OwnedApartments)
                 .WithOne(u => u.Owner)
-                .HasForeignKey(oi => oi.OwnerId);
+                .HasForeignKey(oi => oi.OwnerId)
+                .OnDelete(DeleteBehavior.ClientCascade);
             modelBuilder.Entity<Apartment>()
                 .HasMany(p => p.Photos)
                 .WithOne(u => u.apartment)

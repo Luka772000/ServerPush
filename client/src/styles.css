@@ -133,11 +133,11 @@ li {
     align-items: center;
 }
 .app{
-    width:80%;
+    width:97%;
     text-align: center;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;    
+    margin-left: 1.5%;
+    margin-right: 1.5%;    
    
 }    
 .dimenzije{
@@ -187,3 +187,24 @@ label{
     background-color:#757575 ;
    border:none
 }
+
+
+@media screen and (max-width: 768px) {
+    .app{
+      margin-left: 0;
+      margin-right:0;
+      width:100%
+    }
+    .kockica2{
+      display: none;
+    }
+    .kockica3{
+      display: none;
+    }
+  }
+  @media screen and (orientation: landscape) {
+    header nav {
+      position: fixed;
+      left: 0;
+
+    }}

@@ -1,5 +1,5 @@
-.razmak{
-    margin-bottom:20px
+.razmak,.carosel{
+    padding-top: 50px;
 }
 .tablica{
     color:rgb(0, 0, 0);
@@ -44,4 +44,32 @@
 }
 .tablicaD{
     margin-top:25px;
+}
+
+header nav {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .kockica1,.kockica2,.kockica3,.carosel{
+    display: none;
+  }
+  .razmak{
+      padding-top:100px;
+      width: 100%;
+      margin-left:none
+  }
+  .tekst{
+      font-size: smaller;
+  }
+  .h1{font-size: medium;}
+
+}
+@media screen and (orientation: landscape) {
+  header nav {
+    position: fixed;
+    left: 0;
+    width: 20vw;
+  }
+
 }

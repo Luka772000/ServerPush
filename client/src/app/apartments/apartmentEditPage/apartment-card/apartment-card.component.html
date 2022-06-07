@@ -11,7 +11,6 @@
                 <div class="col-md-12 bg-white KART">
                     <div class="card bg-white">
                         <div class="card-body">
-                            
                                 <div class="row">
                                     <div class="col-md-6 form-group">
                                         <mat-form-field [style.width.%]=100>
@@ -46,18 +45,17 @@
 
  
     
-    <div class="card-body p-2">
-        <button mat-raised-button color="primary" type="submit">Uredi</button>
-        <button mat-raised-button color="primary" type="button" style="margin-left: 5px" (click)="adressToggle()" *ngIf="!apartment.adress?.length">Dodaj Adresu</button>
-        <button mat-raised-button color="primary" type="button" style="margin-left: 5px" (click)="openDialog(apartment)">Postavi sliku</button>
-        <button  mat-raised-button color="primary" (click)="printPage()" type="button" style="margin-left: 5px"> Print</button>
+    <div >
+        <button class="btn" mat-raised-button color="primary" type="submit">Uredi</button>
+        <button class="btn" mat-raised-button color="primary" type="button" style="margin-left: 5px" (click)="adressToggle()" *ngIf="!apartment.adress?.length">Dodaj Adresu</button>
+    </div>
+    <div >    
+        <button class="btn" mat-raised-button color="primary" type="button"  (click)="openDialog(apartment)">Postavi sliku</button>
+        <button class="btn" mat-raised-button color="primary" (click)="printPage()" type="button" style="margin-left: 5px;margin-top:5px"> Print</button>
     </div>
     </form> 
     <div *ngIf="AdressShow" class="container adressCard">
-        <div class="row justify-content-center">
-            <div class="col-12">
                 <app-adding-adress [apartment]="apartment" (cancelAddress)="cancelAddressMode($event)"></app-adding-adress>
-            </div>
-        </div>
+            
     </div>
 

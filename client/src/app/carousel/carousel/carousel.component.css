@@ -7,7 +7,7 @@
   }
   
   ngb-carousel {
-    min-width: 100vw;
+    min-width: 10vw;
     flex: 1;
     border-radius: 10px;
     text-align: center;
@@ -40,4 +40,7 @@
   
   .carousel-indicators{
     z-index: 20;
+  }
+  @media screen and (max-width: 768px) {
+    ngb-carousel{display:none}
   }
