@@ -30,9 +30,9 @@ export class CreateApModalComponent implements OnInit {
     const username = this.accService.getUsername(user);
     this.memberService.apformData.ownerId=username;
     this.bsModalRef.hide();
-    this.createApartment(form)
+    this.createApartment()
   }
-  createApartment(form:NgForm){
+  createApartment(){
     this.memberService.postApartment().subscribe(
       res =>{
         this.memberService.apformData = new ApartmentClass();
